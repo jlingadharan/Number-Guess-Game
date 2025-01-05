@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, p {
+  text-align: center;
+  margin: 25px;
+}
+
+p {
+  font-size: large;
+}
+
+div:has(#start-new-game) {
+  text-align: center;
+}
