@@ -7,13 +7,14 @@ const resultInfo = document.getElementById("result")
 const restartBtn = document.getElementById("start-new-game")
 const guessesMessage = document.getElementById("guesses-message")
 
-
 restartBtn.style.display = "none"
 restartBtn.style.display = "none"
 guessesMessage.style.display = "none"
 guessesInfo.style.display = "none"
 guessesInfo.innerText = "Guesses numbers:"
 resultInfo.style.display = "none"
+
+userInput.focus();
 
 const resultText = (boolean) => {
   resultInfo.style.display = "block"
@@ -64,6 +65,3 @@ restartBtn.addEventListener('click', () => {
   console.log("corr: ",guessNum)
   userInput.value = ""
 })
-
-
-console.log(guessNum)
